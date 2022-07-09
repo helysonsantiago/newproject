@@ -19,6 +19,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 
@@ -37,10 +38,12 @@ nav{
     height: 70px;
     width: 100%;
 
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    
     color: var(--white-0);
     background-color: var(--color-header);
 }
@@ -48,6 +51,7 @@ nav{
 .nav-links{
 
     display: flex;
+    
 }
 
 #logo{
@@ -132,6 +136,7 @@ nav a:hover{
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        
     }
 
     .nav-links a:hover
@@ -161,7 +166,8 @@ nav a:hover{
 
     #nav.active .nav-links{
 
-        position: fixed;
+        position: absolute;
+  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -171,13 +177,14 @@ nav a:hover{
         height: 600px;
         background-color: var(--color-header);
         animation: top 0.5s linear;
-        
+        overflow-y: hidden;
     }
-    
-    #nav.active nav{
 
-        position: fixed;
-    }
+    #nav.active #nav{
+
+    overflow: hidden;
+   }
+   
     #nav.active .menu-mobile{
 
         background-color: var(--blue-violet);
@@ -210,6 +217,12 @@ nav a:hover{
 
     }
 
+    #nav.active .teste {
+        
+        overflow: hidden !important;
+
+    }
+
         @keyframes diamond {
             
             0%{
@@ -221,4 +234,11 @@ nav a:hover{
         }
 
 
+
 }
+
+section{
+
+    height: 100vh;
+}
+
