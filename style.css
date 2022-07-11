@@ -22,6 +22,18 @@
     
 }
 
+::-webkit-scrollbar{
+
+    width: 5px;
+    background-color: var(--color-border-subtle);
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color: var(--blue-violet);
+    border-radius: 5px;
+}
+
 
 body{
 
@@ -46,6 +58,8 @@ nav{
     
     color: var(--white-0);
     background-color: var(--color-header);
+    border-bottom: 1px solid var(--color-border-subtle);
+    z-index: 999;
 }
 
 .nav-links{
@@ -55,29 +69,24 @@ nav{
 }
 
 
-
 nav a{
 
    font-size: var(--font-height-nav); 
    height: 60px;
    min-width: 120px;
    font-weight: 600;
-
    display: inline-flex;
    align-items: center;
    justify-content: center;
-
    text-decoration: none;
    color: var( --color-header-logo);
-   border-bottom: 2px solid transparent;
-    
+   
 }
 
 .menu-mobile{
 
     margin-right: 40px;
     font-size: 30px;
-    
     display: none;
     cursor: pointer;
 }
@@ -90,6 +99,21 @@ nav a{
 
     display: none;
 }
+
+.scrollinng-active{
+
+    background-color: var(--background);
+    transition: 0.5s ease;
+}
+
+
+/***Section***/
+
+section{
+
+    height: 100vh;
+}
+
 /*__________NAV-BAR________*/
 /*_______HOVER____*/
 
@@ -104,11 +128,17 @@ nav a:hover{
 @media (max-width:950px) {
     
 
-    
+
+    /*Nav-bar*/
+    nav {
+
+        border: transparent;
+    }
+
     .menu-mobile{
 
         display: flex;
-        z-index: 5;
+        z-index: 999;
         align-items: center;
         justify-content: center;
         height: 50px;
@@ -136,8 +166,7 @@ nav a:hover{
         
     }
 
-    .nav-links a:hover
-    {
+    .nav-links a:hover{
     
         color: var(--blue-violet);  
         border-color: var(--color-border-subtle);
@@ -153,25 +182,24 @@ nav a:hover{
     #nav.active .versao{
 
         height:100px;
+        font-size: 12px;
         display: inline-flex;
         justify-content: center;
-        align-items: flex-end;
-        font-size: 12px;
+        align-items: flex-end;       
         color: var(--color-text);
       
     }
 
     #nav.active .nav-links{
 
+        width: 100%;
+        height: 600px;
+        top: 0;
         position: absolute;
-  
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 0;
-        width: 100%;
-        height: 600px;
         background-color: var(--color-header);
         animation: top 0.5s linear;
     
@@ -179,27 +207,17 @@ nav a:hover{
 
     #nav.active .nav-links::before{
 
-        content: '';
-        background-color: var(--blue-violet-line);
-        backdrop-filter: blur(100px);
-
+        content: '';  
         width: 100%;
-        height: 200vh;
+        height: 150%;
+        z-index: -1; 
         position: fixed;
-        z-index: -1;
+        backdrop-filter: blur(100px);
         
+        
+          
     }
 
-    section img {
-
-        height: 1000px ;
-        width: 500px;
-    }
-
-    #nav.active #nav{
-
-    overflow: hidden;
-   }
    
     #nav.active .menu-mobile{
 
@@ -227,35 +245,8 @@ nav a:hover{
         margin-top: 78px;   
     }
    
-    #nav.active  #logo{
-
-        z-index: 5;  
-
-    }
-  
-
-        @keyframes diamond {
-            
-            0%{
-                transform: translatex(10px);
-            }
-            100%{
-                transform: translatex(0);
-            }
-        }
-
-
-
-}
-
-section{
-
-    height: 100vh;
 }
 
 
-.scrollinng-active{
 
-    background-color: var(--background);
-    transition: 0.5s ease;
-}
+
