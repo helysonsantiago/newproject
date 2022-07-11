@@ -13,6 +13,71 @@
 }
 
 
+#body.active{
+
+    --background:#EFEFEF;
+    --color-border-subtle: rgba(30,30,30,0.3);
+    --color-header-text: #30363d;
+    --color-text:#161b22;
+}
+
+#body.active .box-footer .links-footer a{
+
+    color: #707070;
+        
+}
+
+#body.active nav a{
+
+    color: #EFEFEF;
+}
+
+#body.active nav{
+
+    background-color: var(--color-border-default);
+    
+}
+
+#body.active .scrollinng-active a{
+ 
+    color: #0d1117;
+}
+
+#body.active nav a:hover{
+ 
+    color: var(--blue-violet);
+}
+
+#body.active .box-footer .links-footer a:hover{
+
+    color: var(--blue-violet);
+   
+}
+
+#body.active .scrollinng-active {
+
+    
+    background-color: var(--background);
+    
+}
+
+#body.active #nav.active .nav-links{
+
+    background-color: var(--background);
+    
+}
+#body.active #nav.active .nav-links a{
+
+    
+    color: var(--color-header-text);
+}
+
+#body.active #nav.active .nav-links a:hover{
+
+    color: var(--blue-violet);
+}
+
+
 
 *{
 
@@ -38,6 +103,7 @@
 body{
 
     background-color: var(--background);
+    color: var(--color-border-subtle);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
@@ -49,7 +115,7 @@ nav{
 
     height: 70px;
     width: 100%;
-
+    z-index: 999;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -59,7 +125,7 @@ nav{
     color: var(--white-0);
     background-color: var(--color-header);
     border-bottom: 1px solid var(--color-border-subtle);
-    z-index: 999;
+    
 }
 
 .nav-links{
@@ -79,9 +145,15 @@ nav a{
    align-items: center;
    justify-content: center;
    text-decoration: none;
-   color: var( --color-header-logo);
+   color: var( --color-header-text);
    
 }
+
+nav a:hover{
+
+    color: var(--blue-violet);
+}
+
 
 .menu-mobile{
 
@@ -89,6 +161,7 @@ nav a{
     font-size: 30px;
     display: none;
     cursor: pointer;
+    color: var(--color-text);
 }
 
 #close{
@@ -109,19 +182,120 @@ nav a{
 
 /***Section***/
 
+
+/***Footer***/
+
 section{
 
+    
     height: 100vh;
+    width: 100%; 
+    align-items: center;
+    display: flex;
+    justify-content: center;  
 }
+
+
+
+#body.active .light {
+    
+    display: none;
+   
+    
+}
+#body.active .night{
+
+    display: block;
+    color: var(--color-border-default);
+}
+.night {
+
+    display: none;
+}
+.light {
+
+    display: block;
+    
+}
+ 
+
+
+
+
+
+.tema {
+
+    color: white;
+    font-size: 25px;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+    margin-right: 50px;
+    cursor: pointer;   
+}
+
+.tema ion-icon{
+
+    position: absolute;
+}
+
+
+.container{
+
+    height: 410px;
+    width: 100%; 
+
+}
+
+
+footer{
+
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.box-footer{
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+   
+    border-top: 1px solid  var(--color-border-subtle);
+}
+
+
+
+.box-footer .links-footer a{
+
+    text-decoration: none;
+    font-size: 25px;
+    margin: 4px;
+    color: var(--color-header-text);
+}
+
+.box-footer .links-footer a:hover{
+
+    color: var(--blue-violet);
+   
+}
+
+
 
 /*__________NAV-BAR________*/
 /*_______HOVER____*/
 
-nav a:hover{
-    
-    color: var(--blue-violet); 
-    
-}
 
 
 /*Mobile*/
@@ -168,9 +342,16 @@ nav a:hover{
 
     .nav-links a:hover{
     
-        color: var(--blue-violet);  
+        color: var(--blue-violet);
         border-color: var(--color-border-subtle);
-        animation: diamond 1s linear alternate;
+        animation: x 1s linear alternate;
+    }
+
+    @keyframes x{
+
+        0%{
+            transform: translateX(5px);
+        }
     }
 
     .nav-links a:focus{

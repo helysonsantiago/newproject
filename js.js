@@ -10,6 +10,20 @@ mobile.addEventListener('click',() => {
     
 })
 
+
+const dark = document.querySelector('.tema');
+
+dark.addEventListener('click',() => {
+
+    let op = document.getElementById('body')
+
+    op.classList.toggle('active')
+    
+    
+    
+})
+
+
 window.addEventListener('scroll',function(){
 
     let header = document.getElementById('nav');
