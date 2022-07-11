@@ -131,11 +131,12 @@ nav a:hover{
     .nav-links a{
 
         border-bottom: 1px solid transparent;    
-        height: 70px;  
+        height: 70px;
         margin-left: 20px;
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        
         
     }
 
@@ -177,6 +178,8 @@ nav a:hover{
         height: 600px;
         background-color: var(--color-header);
         animation: top 0.5s linear;
+        overflow-x: hidden;
+        float: inline-start;
         overflow-y: hidden;
     }
 
@@ -216,12 +219,7 @@ nav a:hover{
         z-index: 5;  
 
     }
-
-    #nav.active .teste {
-        
-        overflow: hidden !important;
-
-    }
+  
 
         @keyframes diamond {
             
