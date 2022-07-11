@@ -1,5 +1,5 @@
 :root{
-    --font-height-nav:13px;
+    --font-height-nav:14px;
     --white-0:#EFEFEF;
     --box-shadow: 0px 1px 14px black ;
     --background:#0d1117;
@@ -54,18 +54,13 @@ nav{
     
 }
 
-#logo{
 
-    font-size: 40px;
-    margin-left: 40px;
-    color: var(--white-0);
-}
 
 nav a{
 
    font-size: var(--font-height-nav); 
    height: 60px;
-   min-width: 100px;
+   min-width: 120px;
    font-weight: 600;
 
    display: inline-flex;
@@ -75,7 +70,7 @@ nav a{
    text-decoration: none;
    color: var( --color-header-logo);
    border-bottom: 2px solid transparent;
-
+    
 }
 
 .menu-mobile{
@@ -120,6 +115,7 @@ nav a:hover{
         width: 50px;
         text-align: center;
         border-radius: 50%;
+       
     }
 
     .nav-links{
@@ -136,7 +132,7 @@ nav a:hover{
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        
+       
         
     }
 
@@ -178,9 +174,26 @@ nav a:hover{
         height: 600px;
         background-color: var(--color-header);
         animation: top 0.5s linear;
-        overflow-x: hidden;
-        float: inline-start;
-        overflow-y: hidden;
+    
+    }
+
+    #nav.active .nav-links::before{
+
+        content: '';
+        background-color: var(--blue-violet-line);
+        backdrop-filter: blur(100px);
+
+        width: 100%;
+        height: 200vh;
+        position: fixed;
+        z-index: -1;
+        
+    }
+
+    section img {
+
+        height: 1000px ;
+        width: 500px;
     }
 
     #nav.active #nav{
@@ -210,7 +223,7 @@ nav a:hover{
         width: 100%;
         display: flex;
         background-color: var(--color-border-subtle);
-        z-index: 10;
+        z-index: 999;
         margin-top: 78px;   
     }
    
