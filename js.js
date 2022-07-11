@@ -5,23 +5,16 @@ mobile.addEventListener('click',() => {
     let menu = document.querySelector('nav')
 
     menu.classList.toggle('active')
-
+    
     
     
 })
 
-const p = document.querySelector("#section");
+window.addEventListener('scroll',function(){
 
-const position = p.getBoundingClientRect();
+    let header = document.getElementById('nav');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('scrollinng-active',  windowPosition);
 
-    if (position.y < 0){
-
-        let nav = document.querySelector("#nav");
-        nav.style.background= "#0d1117";
-        
-    }else if(position.y == 0){
-
-        let nav = document.querySelector("#nav");
-        nav.style.background= "#161b22";
-
-    }
+})
+    
