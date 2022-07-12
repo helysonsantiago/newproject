@@ -197,6 +197,16 @@ section{
 
 
 
+.status p{
+
+    position: absolute;
+    color: var(--blue-violet);
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+
 #body.active .light {
     
     display: none;
@@ -218,6 +228,23 @@ section{
     
 }
  
+#body.active .off{
+
+    display: none;
+}
+#body.active .on{
+
+    display: block;
+}
+
+.on{
+
+    display: none;
+}
+
+.off{
+    display: block;
+}
 
 
 
