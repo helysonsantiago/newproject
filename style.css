@@ -16,7 +16,8 @@
 
 select{
 
-    text-align: center !important;
+   text-align: center !important;
+    font-size: 14px !important;
     background: none;
     color: var(--blue-violet);
     width: 120px;
