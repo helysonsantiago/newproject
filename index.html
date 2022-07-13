@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
     <title>dw</title>
 </head>
 <body id="body">
@@ -12,9 +13,19 @@
     <nav id="nav">
         <div class="epc"></div>    
         <div  class="nav-links">
-           <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+           <a href="#">Projetos</a>
+            <a href="#">contato</a>
+            <a href="#">
+                <select onchange="doGTranslate(this);">
+                    <option value="">Idioma</option>
+                    <option value="pt|en">Inglês</option>
+                    <option value="pt|fr">Francês</option>
+                    <option value="pt|de">Alemão</option>
+                    <option value="pt|it">Italiano</option>
+                    <option value="pt|ja">japonês</option>
+                    <option value="pt|pt">Português</option>
+                </select><div id="google_translate_element2"></div>
+            </a>
             <p class="versao" > Versão 1.0 </p>     
         </div>
         <div class="menu-mobile">
@@ -24,10 +35,6 @@
     </nav>
    <section >
     <div class="tema">
-        <div class="status">
-            <p class="on">on</p>
-            <p class="off">off</p>
-        </div>
         <div class="dark">
             <ion-icon class="night" name="moon-sharp"></ion-icon>
             <ion-icon class="light" name="sunny-sharp"></ion-icon>
@@ -35,8 +42,12 @@
     </div>
     
    <div class="container">
-    
-    
+        <div class="title">
+            <h1>Meus Distintivos</h1>
+        </div>
+        <div class="content">
+           <a title="CCNA: Introduction to Networks" target="_blank" href="https://www.credly.com/earner/earned/badge/9f8334db-d8ba-4e78-9fbf-c2ee5bb15665"><img class="ccna" src="/imgs/badges/CCNAITN__1_.png"  alt=""></a>
+        </div>   
    </div>
    </section>
    <footer>
@@ -57,5 +68,15 @@
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/48170a1a90.js" crossorigin="anonymous"></script>
     <script src="/js.js" ></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'pt',autoDisplay: false}, 'google_translate_element2');}
+        </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+        
+        
+        <script type="text/javascript">
+        /* <![CDATA[ */
+        eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+        /* ]]> */
+        </script>      
 </body>
 </html>
