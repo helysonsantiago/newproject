@@ -13,17 +13,28 @@ mobile.addEventListener('click',() => {
 })
 
 
-const dark = document.querySelector('.tema');
+const dark = document.querySelector('.dark');
 
 dark.addEventListener('click',() => {
 
     let op = document.getElementById('body')
 
     op.classList.toggle('active')
-    
-    
+     
     
 })
+
+const side = document.getElementById('arrow')
+
+side.addEventListener('click',() => {
+
+    let op = document.querySelector('.side-bar')
+
+    op.classList.toggle('active')
+     
+    
+})
+
 
 
 window.addEventListener('scroll',function(){
