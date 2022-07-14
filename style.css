@@ -405,7 +405,7 @@ footer{
     display: flex;
     align-items: center;
     z-index: 10;
-    position: relative;
+    position: absolute;
     background-color: var(--background);
 }
 
