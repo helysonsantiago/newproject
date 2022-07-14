@@ -581,7 +581,7 @@ footer{
 
     .side-bar.active {
 
-        width: 30%;
+        width: 100px;
         transition: all 1s ease-out;
         display: flex;
     }
