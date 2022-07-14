@@ -31,6 +31,16 @@ side.addEventListener('click',() => {
     let op = document.querySelector('.side-bar')
 
     op.classList.toggle('active')
+
+    let ft = document.querySelector('.box-footer')
+
+    if (op.classList.contains('active')){
+
+        ft.classList.add('active');
+    } else{
+
+        ft.classList.remove('active');
+    }
      
     
 })
