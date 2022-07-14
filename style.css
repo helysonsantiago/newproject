@@ -580,13 +580,10 @@ footer{
     }
 
 
-    .side-bar{
-
-        display: flex;
-    }
+   
     .side-bar.active {
 
-        width: 100px !important;
+        margin-left: 80px;
         transition: all 1s ease-out;
         
     }
