@@ -266,7 +266,7 @@ section{
     position: fixed;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 600px;
     width: 4%;
     display: flex;
     align-items: center;
