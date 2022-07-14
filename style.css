@@ -581,13 +581,13 @@ footer{
 
     .side-bar.active {
 
-        width: 25%;
+        width: 30%;
         transition: all 1s ease-out;
         display: flex;
     }
     #arrow{
 
-        display: block;
+        display: flex;
         width: 4%;
 
     }
