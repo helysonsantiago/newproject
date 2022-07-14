@@ -283,7 +283,6 @@ section{
     position: fixed;
     justify-content: end;
     height: 100vh;
-    width: 3%;
     left: 0 !important;
     display: flex;
     align-items: center;
@@ -293,7 +292,9 @@ section{
 }
 
 #arrow{
+    
     display: none;
+    width: 40px;
 }
 
 .tema a {
@@ -583,7 +584,7 @@ footer{
    
     .side-bar.active {
 
-        margin-left: 80px;
+        margin-left: 100px;
         transition: all 1s ease-out;
         
     }
@@ -605,7 +606,7 @@ footer{
 
     .side-bar.active .tema{
 
-       
+         left: 0;
         transition: all 1s ease-out;
     }
    
