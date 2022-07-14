@@ -284,7 +284,7 @@ section{
     justify-content: end;
     height: 100vh;
     width: 3%;
-    left: 0;
+    left: 0 !important;
     display: flex;
     align-items: center;
     cursor: pointer;  
@@ -579,11 +579,16 @@ footer{
         margin-top: 78px;   
     }
 
+
+    .side-bar{
+
+        display: flex;
+    }
     .side-bar.active {
 
-        width: 100px;
+        width: 100px !important;
         transition: all 1s ease-out;
-        display: flex;
+        
     }
     #arrow{
 
