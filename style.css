@@ -603,7 +603,7 @@ footer{
 
     .side-bar.active .tema{
 
-        left: 0;
+       
         transition: all 1s ease-out;
     }
    
