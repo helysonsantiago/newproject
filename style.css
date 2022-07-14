@@ -223,15 +223,7 @@ section{
 
 
 
-.status p{
 
-    position: absolute;
-    color: var(--blue-violet);
-    text-transform: uppercase;
-    font-size: 10px;
-    margin-top: 7px;
-    margin-left: 30px;
-}
 
 #body.active .light {
     
@@ -426,6 +418,7 @@ footer{
 
 
 
+
 /*__________NAV-BAR________*/
 /*_______HOVER____*/
 
@@ -434,7 +427,7 @@ footer{
 /*Mobile*/
 @media (max-width:950px) {
     
-
+    
 
     /*Nav-bar*/
     nav {
@@ -459,7 +452,7 @@ footer{
     .tema{
         
     
-        width: 20%;
+        width: 10%;
         left: -20%;
          
      }
@@ -623,7 +616,7 @@ footer{
     .side-bar.active .tema{
 
         
-         left: 0;
+        left: 0;
         transition: all 1s ease-out;
     }
    
@@ -632,3 +625,20 @@ footer{
 
 
 
+@media (max-width:700px){
+
+    .tema{
+
+        width: 15%;
+    }
+    
+}
+
+@media (max-width:500px){
+
+    .tema{
+
+        width: 20%;
+    }
+    
+}
