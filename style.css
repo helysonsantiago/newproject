@@ -288,7 +288,7 @@ section{
     align-items: center;
     cursor: pointer;  
     z-index: 6;
-    display: none;
+    
 }
 
 #arrow{
@@ -331,6 +331,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .collum{
@@ -352,7 +353,8 @@ section{
 }
 
 
-.content i:hover{
+.content i:hover,
+.content i:focus{
     transition: all 0.8s;
     color: var(--blue-violet);
     text-shadow: 0px 1px 40px  rgba(255, 85, 0,.3);
@@ -402,7 +404,7 @@ footer{
     height: 80px;
     display: flex;
     align-items: center;
-    z-index: 5;
+    z-index: 10;
     position: relative;
     background-color: var(--background);
 }
