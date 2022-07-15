@@ -89,3 +89,10 @@ function leiaMais(){
     }
  
 }
+
+
+ScrollReveal().reveal('.container', {
+    delay: 405,
+    duration: 500,
+    reset: true
+});

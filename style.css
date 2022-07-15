@@ -184,11 +184,22 @@ section{
 
     height: 410px;
     width: 100%; 
-    display: flex ;
+    display: flex;
     flex-direction: column;
     align-items: center; 
     flex-direction: column;
+    animation: up 3s;
+}
 
+@keyframes up{
+    
+    0%{
+        opacity: 0;
+        transform: translatey(-60px);
+    }100%{
+        opacity: 100;
+        transform: translatey(0);
+    }
 }
 .height{
 
