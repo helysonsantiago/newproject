@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/> 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <title>dw</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png">
+    <title>Helyson Santiago-Portfólio WEB</title>
 </head>
 <body id="body">
     <!--NAV BAR-->
@@ -15,7 +19,7 @@
         <div class="epc"></div>    
         <div  class="nav-links">
            <a href="#">Projetos</a>
-            <a href="#">contato</a>
+            <a href="#contato">contato</a>
             <a href="#">
                 <select onchange="doGTranslate(this);">
                     <option value="">Idioma</option>
@@ -27,7 +31,7 @@
                     <option value="pt|pt">Português</option>
                 </select><div id="google_translate_element2"></div>
             </a>
-            <p class="versao" > Versão 1.0 </p>     
+            
         </div>
         <div class="menu-mobile">
             <i id="open" class="fa-solid fa-bars-staggered"></i>
@@ -56,7 +60,7 @@
     
    <div class="container">
         <div class="title">
-            <h1>Minhas Habilidades de Desenvolvedor</h1>
+            <h2>Minhas Habilidades de Desenvolvedor</h2>
         </div>
         <div class="content collum">
            <div class="front">
@@ -80,18 +84,111 @@
    <section>
     <div class="container">
         <div class="title">
-            <h1>Meus Distintivos</h1>
+          <h2>Meus Projetos</h2>
+        </div>
+            <div class="content">
+                <!--+-->
+                <div class="projeto">
+                    <div id="bgk">
+                        <div class="info">
+                            <!--================== NOME AQUI=========-->
+                            <h2>Links WEB</h2>
+                        </div>
+                        <a id="links" ><i  class="fa-solid fa-link"></i></a>
+                    </div>
+                    <!--================== IMAGEM AQUI=========-->
+                    <img id="img" src=" alt="">      
+                </div>
+                <div class="projeto">
+                    <div id="bgk">
+                        <div class="info">
+                            <!--================== NOME AQUI=========-->
+                            <h2>Links WEB</h2>
+                        </div>
+                        <a id="links" ><i  class="fa-solid fa-link"></i></a>
+                    </div>
+                    <!--================== IMAGEM AQUI=========-->
+                    <img id="img" src=" alt="">      
+                </div>
+                <!--+-->
+            </div>
+        </div>
+       
+        <div  class="container conteudo">
+            <div class="content ">
+                <div class="projeto">
+                    <div id="bgk">
+                        <div class="info">
+                            <!--================== NOME AQUI=========-->
+                            <h2>Links WEB</h2>
+                        </div>
+                        <a id="links" ><i  class="fa-solid fa-link"></i></a>
+                    </div>
+                    <!--================== IMAGEM AQUI=========-->
+                    <img id="img" src=" alt="">      
+                </div>
+                <div class="projeto">
+                    <div id="bgk">
+                        <div class="info">
+                            <!--================== NOME AQUI=========-->
+                            <h2>Links WEB</h2>
+                        </div>
+                        <a id="links" ><i  class="fa-solid fa-link"></i></a>
+                    </div>
+                    <!--================== IMAGEM AQUI=========-->
+                    <img id="img" src=" alt="">      
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="container height">
+            <div class="content align">
+               <button onclick="leiaMais()" id="ver-mais">ver mais</button>
+            
+            </div>
+        </div>
+   
+</section>
+   <section>
+    
+    <div class="container">
+        <div class="title">
+            <h2>Meus Distintivos</h2>
         </div>
         <div class="content">
            <a title="CCNA: Introduction to Networks" target="_blank" href="https://www.credly.com/earner/earned/badge/9f8334db-d8ba-4e78-9fbf-c2ee5bb15665"><img class="ccna" src="/imgs/badges/CCNAITN__1_.png"  alt=""></a>
         </div>   
    </div>
    </section>
+   <a class="transition" name="contato" ></a>
+   <section>
+    <div class="container">
+        
+        <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST"  class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">E-mail</label>
+            <input  type="email" name="email" id="email" required />
+            <label for="message">Mensagem</label>
+            <textarea placeholder="Ex. Vamos Trabalhar juntos! 🤝 " name="message" id="message" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+                type="hidden"
+                name="_next"
+                value="https://yourdomain.co/thanks.html"
+            />
+            <button type="submit" >Enviar</button>
+            </form>
+    </div>
+   </section>
    <footer >
     
         <div class="box-footer">
             <div class="text-footer">
-                <p>©2022 Helyson Santiago . All rigths reserved</p>
+                <p>©2022 Helyson Santiago. Todos os direitos reservados</p>
+                <p class="versao" > Versão 1.0 </p> 
             </div>
         </div>
     

@@ -8,9 +8,26 @@ mobile.addEventListener('click',() => {
 
     menu.classList.toggle('active')
     
+     
+})
+
+const bgk = document.getElementById('img');
+
+bgk.addEventListener('click',() => {
+
+    let op = document.getElementById('bgk');
     
+    op.classList.toggle('active')
+     
+    let bgkoff= document.getElementById('bgk');
+
+    bgkoff.addEventListener('click',() => {
+
+        bgkoff.classList.remove('active')
+    })
     
 })
+
 
 
 const dark = document.querySelector('.dark');
@@ -55,3 +72,20 @@ window.addEventListener('scroll',function(){
 
 })
     
+
+
+function leiaMais(){
+
+    let lerMais=document.querySelector('.conteudo');
+    let btn= document.getElementById('ver-mais');
+
+    if(lerMais.style.display === "none"){
+        lerMais.style.display ="flex";
+        btn.innerHTML = "ver menos";
+    } else{
+        lerMais.style.display ="none";
+        btn.innerHTML = "ver mais";
+        
+    }
+ 
+}
