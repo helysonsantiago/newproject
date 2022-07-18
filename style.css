@@ -185,26 +185,25 @@ section{
     height: 410px;
     width: 100%; 
     display: flex;
-    flex-direction: column;
+    
     align-items: center; 
     flex-direction: column;
-    animation: up 3s;
+    
 }
 
-@keyframes up{
-    
-    0%{
-        opacity: 0;
-        transform: translatey(-60px);
-    }100%{
-        opacity: 100;
-        transform: translatey(0);
-    }
-}
+
 .height{
 
     height:30vh;
 }
+
+.font{
+
+    font-size: 14px;
+    
+}
+
+
 .conteudo{
 
     display: none;
@@ -241,6 +240,7 @@ section{
     flex-direction: column;
     text-align: center;
     color: var(--color-text-title);
+    
 }
 .title::after{
 
@@ -274,6 +274,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     position: relative;
 }
 
@@ -597,7 +598,7 @@ footer{
 
     .nav-links a:hover{
     
-        color: var(--blue-violet);
+        color: var(--color-p);
         border-color: var(--color-border-subtle);
        
     }

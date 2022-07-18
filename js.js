@@ -7,7 +7,10 @@ mobile.addEventListener('click',() => {
     let menu = document.querySelector('nav')
 
     menu.classList.toggle('active')
-    
+
+    let links = document.querySelector('.nav-links')
+
+    links.classList.toggle('active')
      
 })
 
@@ -71,7 +74,10 @@ window.addEventListener('scroll',function(){
     header.classList.toggle('scrollinng-active',  windowPosition);
 
 })
-    
+
+
+
+
 
 
 function leiaMais(){
@@ -90,9 +96,3 @@ function leiaMais(){
  
 }
 
-
-ScrollReveal().reveal('.container', {
-    delay: 405,
-    duration: 500,
-    reset: true
-});
