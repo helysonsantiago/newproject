@@ -11,10 +11,11 @@
     --color-text-title:rgba(240, 246, 252, 70%);
     --color-header-text: #f0f6fc;
     --color-border-subtle: rgba(240, 246, 252, 0.1);
-    --color-p:#08BDBA;
-    --text-shadow:0px 1px 40px  rgba(8, 189, 186,.7);
-    --box-shadow:0px 1px 20px  rgba(8, 189, 186,.3);;
-    --blue-violet-line : rgba(138, 44, 206, 15%)
+    --color-p:#32cd32; /*cor principal*/ 
+    --text-shadow:0px 1px 40px  rgba(50, 205, 50,.2); 
+    --box-shadow:0px 1px 20px  rgba(50, 205, 50,.3);
+    /*Para altera o valor de box e text shadow é necessario
+    obter o rgb da cor principal*/ 
 }
 
 
@@ -110,6 +111,8 @@ select{
 }
 
 
+
+
 #body.active nav a{
 
     color: var(--color-header-text);
@@ -167,7 +170,7 @@ nav a:hover{
 
 
 
-/*-----Section 1------*/
+/*-----Section ------*/
 section{
 
     min-height: 100vh;
@@ -253,13 +256,7 @@ section{
     margin-top: 80px;
 }
 
-.content #img{
-    height: 100%;
-    width:100%;
-    z-index: 3;
-    position: relative;
-    cursor: pointer;
-}
+
 .projeto:hover{
 
    transform: scale(1.1);
@@ -278,12 +275,18 @@ section{
     position: relative;
 }
 
+#img{
+    height: 100%;
+    width:100%;
+    z-index: 3;
+    cursor: pointer;
+}
 
 #bgk{
 
     height: 100%;
     width: 100%;
-    background:linear-gradient(#08bdba3d,rgba(255, 255, 255, 0.027));
+    background:linear-gradient(var(--color-p),rgba(255, 255, 255, 0.027));
     color: white;
     border-radius: 5px;
     position: absolute;
@@ -294,14 +297,13 @@ section{
     justify-content: center;
     z-index: 4;
     cursor: pointer;
-    
+    border: none;
 }
 
 #bgk.active{
 
     transform: translatey(0);
-    transition: 1s;
-    
+    transition: 1s;   
 
 }
 
@@ -317,7 +319,7 @@ section{
 
     width: 45%;
     height: 80%;
-    border:1px solid var(--color-p);
+    
     border-radius: 5px;
     margin: 10px;
     position: relative;
@@ -581,7 +583,6 @@ footer{
     .nav-links{
 
         display: none;   
-       
     }
 
     .nav-links a{
@@ -604,11 +605,8 @@ footer{
     }
 
    
-    .nav-links a:focus{
 
-        border-color: rgba(138, 44, 206, 15%);
-    }
-
+  
     .nav-links.active{
 
         width: 100%;
@@ -620,7 +618,7 @@ footer{
         justify-content: center;
         align-items: center;
         background-color: var(--color-header);
-        animation: top 0.5s linear;
+        
     
     }
 
@@ -646,13 +644,13 @@ footer{
         width: 50px;
         text-align: center;
         border-radius: 50%;
-       
+        color: var(--color-p);
     }
 
     #nav.active .menu-mobile:hover{
 
-        transition: all 0.5s ease-in-out;
-        background-color: var(--blue-violet);
+        transition: all 0.4s ease-in-out;
+        background-color: var(--color-text);
     }
 
     #nav.active #close{
@@ -686,18 +684,17 @@ footer{
     #body.active #nav.active .nav-links a{
     
         
-        color: var(--color-header-text);
+        color: var(--color-text);
     }
     
     #body.active #nav.active .nav-links a:hover{
     
-        color: var(--blue-violet);
+        color: var(--color-p);
     }
     
 
    /*dark-mod e barra lateral*/
 
-  
     .tema{
         
     

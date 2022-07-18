@@ -1,5 +1,13 @@
 
 
+window.addEventListener('scroll',function(){
+
+    let header = document.getElementById('nav');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('scrollinng-active',  windowPosition);
+
+})
+
 const mobile = document.querySelector('.menu-mobile');
 
 mobile.addEventListener('click',() => {
@@ -14,25 +22,6 @@ mobile.addEventListener('click',() => {
      
 })
 
-const bgk = document.getElementById('img');
-
-bgk.addEventListener('click',() => {
-
-    let op = document.getElementById('bgk');
-    
-    op.classList.toggle('active')
-     
-    let bgkoff= document.getElementById('bgk');
-
-    bgkoff.addEventListener('click',() => {
-
-        bgkoff.classList.remove('active')
-    })
-    
-})
-
-
-
 const dark = document.querySelector('.dark');
 
 dark.addEventListener('click',() => {
@@ -43,6 +32,7 @@ dark.addEventListener('click',() => {
      
     
 })
+
 
 const side = document.getElementById('arrow')
 
@@ -66,19 +56,23 @@ side.addEventListener('click',() => {
 })
 
 
+const bgk = document.getElementById('img');
 
-window.addEventListener('scroll',function(){
+bgk.addEventListener('click',() => {
 
-    let header = document.getElementById('nav');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('scrollinng-active',  windowPosition);
+    let op = document.getElementById('bgk');
+    
+    op.classList.toggle('active')
+     
+    let bgkoff= document.getElementById('bgk');
 
+    bgkoff.addEventListener('click',() => {
+
+        bgkoff.classList.remove('active')
+    })
+
+    
 })
-
-
-
-
-
 
 function leiaMais(){
 
@@ -95,4 +89,14 @@ function leiaMais(){
     }
  
 }
+
+
+
+
+
+
+
+
+
+
 
